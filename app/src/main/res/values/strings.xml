@@ -21,4 +21,7 @@
     <string name="are_you_sure_you_want_to_exit">Are you sure you want to exit?</string>
     <string name="image">image</string>
     <string name="no_internet_available">No Internet Available</string>
+    <string name="login_failed">Login failed</string>
+    <string name="sign_up_failed">Sign up failed</string>
+    <string name="error">Error: %1$s</string>
 </resources>

@@ -1,6 +1,7 @@
 package com.android.frogtest.repository
 
-import com.android.frogtest.di.RetrofitInstance
-class MovieRepository {
-    suspend fun getMovies(page: Int, year: Int) = RetrofitInstance.api.getMovies(page, year)
+import com.android.frogtest.api.ApiService
+
+class MovieRepository (private val apiService: ApiService) {
+    suspend fun getMovies(page: Int, year: Int) = apiService.getMovies(page, year)
 }

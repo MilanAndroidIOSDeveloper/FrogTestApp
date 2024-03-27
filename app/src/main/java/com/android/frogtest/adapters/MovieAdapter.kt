@@ -18,7 +18,8 @@ class MovieAdapter : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MovieViewHolder {
-        val binding = ListItemMovieBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding =
+            ListItemMovieBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return MovieViewHolder(binding)
     }
 
@@ -29,11 +30,16 @@ class MovieAdapter : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
 
     override fun getItemCount(): Int = movies.size
 
-    inner class MovieViewHolder(private val binding: ListItemMovieBinding) : RecyclerView.ViewHolder(binding.root) {
+    inner class MovieViewHolder(private val binding: ListItemMovieBinding) :
+        RecyclerView.ViewHolder(binding.root) {
         fun bind(movie: Movie) {
             binding.title.text = movie.title
             binding.years.text = movie.year
-            Glide.with(itemView).load(movie.poster).error(R.drawable.no_img_available).into(binding.posterImageView)
+            Glide.with(itemView)
+                .load(movie.poster)
+                .error(R.drawable.no_img_available)
+                .centerCrop()
+                .into(binding.posterImageView)
         }
     }
 }

@@ -1,6 +1,5 @@
 package com.android.frogtest.di
 
-
 import com.android.frogtest.BuildConfig
 import com.android.frogtest.api.ApiService
 import com.android.frogtest.repository.MovieRepository
@@ -16,17 +15,24 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object RetrofitInstance {
 
-    val api: ApiService by lazy {
-        Retrofit.Builder()
+    @Provides
+    @Singleton
+    fun provideRetrofitInstance(): Retrofit {
+        return Retrofit.Builder()
             .baseUrl(BuildConfig.API_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-            .create(ApiService::class.java)
     }
 
-    @Singleton
     @Provides
-    fun provideMovieRepository(): MovieRepository {
-        return MovieRepository()
+    @Singleton
+    fun provideApiService(retrofit: Retrofit): ApiService {
+        return retrofit.create(ApiService::class.java)
+    }
+
+    @Provides
+    @Singleton
+    fun provideMovieRepository(apiService: ApiService): MovieRepository {
+        return MovieRepository(apiService)
     }
 }
