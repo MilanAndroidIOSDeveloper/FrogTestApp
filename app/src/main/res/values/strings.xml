@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Frogtest</string>
+    <string name="biometric_authentication_succeeded">Biometric authentication succeeded</string>
+    <string name="fingerprint_hardware_not_available">Fingerprint hardware not available.</string>
+    <string name="biometric_authentication_error">Biometric authentication error: %1$s</string>
+    <string name="biometric_authentication_failed">Biometric Authentication Failed</string>
+    <string name="verify_that_it_s_you">Verify that it\'s you</string>
+    <string name="use_your_fingerprint_to_continue">Use your fingerprint to continue</string>
+    <string name="cancel">Cancel</string>
+    <string name="don_t_have_an_account_sign_up_here">Don\'t have an account? Sign up here.</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="biometric_authentication_error_too_many_attempts_try_again_later">Biometric authentication error: Too many attempts. Try again later.</string>
+    <string name="biometric_authentication_error_fingerprint_operation_cancelled_by_user">Biometric authentication error: Fingerprint operation cancelled by user.</string>
+    <string name="logout">Logout</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout?</string>
+    <string name="yes">Yes</string>
+    <string name="exit">Exit</string>
+    <string name="are_you_sure_you_want_to_exit">Are you sure you want to exit?</string>
+    <string name="image">image</string>
+    <string name="no_internet_available">No Internet Available</string>
+</resources>

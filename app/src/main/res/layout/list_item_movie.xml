@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/_5sdp"
+    android:paddingTop="@dimen/_5sdp"
+    android:paddingRight="@dimen/_5sdp">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140sdp"
+        app:cardCornerRadius="@dimen/_12sdp"
+        app:cardElevation="0dp"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/blackt"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingRight="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@color/custom"
+                app:cardCornerRadius="@dimen/_12sdp"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:id="@+id/years"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/custom"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8sdp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <ImageView
+                android:id="@+id/posterImageView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_140sdp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image"
+                android:scaleType="centerCrop" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "444800902517",
+    "project_id": "frogtest-fc8da",
+    "storage_bucket": "frogtest-fc8da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:444800902517:android:152db0916b70691b839f3c",
+        "android_client_info": {
+          "package_name": "com.android.frogtest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYsClwCPeV_NXe1_g0gJCeqtnAL-iLcIg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
