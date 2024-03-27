@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Frogtest</string>
+    <string name="app_name">FrogTestApp</string>
     <string name="biometric_authentication_succeeded">Biometric authentication succeeded</string>
     <string name="fingerprint_hardware_not_available">Fingerprint hardware not available.</string>
     <string name="biometric_authentication_error">Biometric authentication error: %1$s</string>

@@ -1,11 +1,7 @@
 package com.android.frogtest.ui.activity
 
-import android.content.Context
 import android.content.Intent
 import android.content.Intent.FLAG_ACTIVITY_CLEAR_TOP
-import android.net.ConnectivityManager
-import android.net.NetworkCapabilities
-import android.os.Build
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -116,9 +112,7 @@ class MovieListActivity : AppCompatActivity() {
 
         FirebaseAuth.getInstance().signOut()
         startActivity(
-            Intent(this@MovieListActivity, SignInActivity::class.java).addFlags(
-                FLAG_ACTIVITY_CLEAR_TOP
-            )
+            Intent(this@MovieListActivity, SignInActivity::class.java).addFlags(FLAG_ACTIVITY_CLEAR_TOP)
         )
     }
 

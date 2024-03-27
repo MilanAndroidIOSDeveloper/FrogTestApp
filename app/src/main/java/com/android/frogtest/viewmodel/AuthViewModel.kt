@@ -7,7 +7,6 @@ import androidx.lifecycle.viewModelScope
 import com.android.frogtest.BioMetricManager
 import com.android.frogtest.BioMetricPrompt
 import com.android.frogtest.FrogTestApplication
-import com.android.frogtest.ui.fragment.LoginFragment
 import com.android.frogtest.R
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase

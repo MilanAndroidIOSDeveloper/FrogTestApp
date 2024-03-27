@@ -33,7 +33,7 @@ class MovieAdapter : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
         fun bind(movie: Movie) {
             binding.title.text = movie.title
             binding.years.text = movie.year
-            Glide.with(itemView).load(movie.poster).error(R.drawable.noimg).into(binding.posterImageView)
+            Glide.with(itemView).load(movie.poster).error(R.drawable.no_img_available).into(binding.posterImageView)
         }
     }
 }

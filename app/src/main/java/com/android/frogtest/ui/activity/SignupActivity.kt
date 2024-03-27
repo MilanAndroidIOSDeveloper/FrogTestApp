@@ -1,10 +1,9 @@
 package com.android.frogtest.ui.activity
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.android.frogtest.R
 import com.android.frogtest.databinding.ActivitySignupBinding
-import com.android.frogtest.ui.fragment.LoginFragment
 import com.android.frogtest.ui.fragment.RegisterFragment
 import dagger.hilt.android.AndroidEntryPoint
 
